@@ -18,16 +18,16 @@ Vue.createApp({
   data() {
     return {
       goals: [],
-      enteredValue: "",
+      enteredValue: '',
     };
   },
   methods: {
     addGoal() {
-      if (this.enteredValue === "") {
+      if (this.enteredValue === '') {
         return;
       }
       this.goals.push(this.enteredValue);
-      this.enteredValue = "";
+      this.enteredValue = '';
     },
   },
-}).mount("#app");
+}).mount('#app');
